@@ -832,6 +832,11 @@ body{
     margin-bottom: 10px;
 }
 
+.input-wrap last{
+    position: relative;
+    margin-bottom: 20px;
+}
+
 .label-text{
     color: var(--input-text-lable-color);
     font-family: 'Roboto' sans-serif;
@@ -937,13 +942,6 @@ body{
     justify-content: center;
     align-items: center;
 
-}
-
-.check-box-wrap{
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .invisible{
