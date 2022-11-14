@@ -260,192 +260,6 @@ body{
 .header-icon:focus .header-icon{
     fill: var(--logo-blue-color)
 }
-/*--------------footer--------------*/
-
-.footer{
-    background-color:var(--accent-background-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-.footer-container {
-    display: flex;
-    align-items: baseline;
-    margin-left:auto ;
-    margin-right: auto;
-}
-
-/*--------------CONTACTS--------------*/
-
-
-.logo-accent-white{
-    color:var(--hero-text-color);
-}
-
-.link-address-address{
-    color: var(--hero-text-color);
-    font-size: 14px;
-    line-height:calc(24/14);
-    letter-spacing: 0.03em;
-    display: inline-block;
-}
-
-.link-address{
-    color: var(--hero-text-color);
-    font-size: 14px;
-    line-height:calc(24/14);
-    letter-spacing: 0.03em;
-    color:var(--hero-text-color-low-wisibility);
-}
-
-.footer-address{
-    margin-top: 20px;
-}
-
-.address-item:not(:last-child) {
-    margin-bottom: 9px;
-}
-
-.call{
-    display: inline-block;
-}
-
-.footer-contact{
-    margin-right: 70px;
-}
-
-/*--------------приєднуйтесь------------ */
-.join-wrap{
-    padding-top: 72px;
-    padding-bottom: 100px;
-}
-
-.footer-soc-titel,
-.footer-soc-titel{
-    color: var(--hero-text-color);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16/14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-.footer-soc-list {
-    display: flex;
-    gap: 10px;
-
-}
-
-.footer-soc-item {
-    width: 44px;
-    height: 44px;
-}
-
-.footer-soc-link {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color:rgba(255, 255, 255, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer-soc-link{
-    fill: var(--hero-text-color);
-    transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
-}
-
-.footer-soc-link:hover, 
-.footer-soc-link:focus{
-    background-color: var(--logo-blue-color);
-}
-
-/*--------------Підпишіться на розсилку------------ */
-.subscribe-wrap{
-    margin-left: 93px;
-    padding-top: 72px;
-    padding-bottom: 94px;
-}
-
-.subscribe-form{
-    position: relative;
-    display: flex;
-}
-
-.subscribe-input{
-    width:300px;
-    height: 50px;
-    color: rgba(255, 255, 255, 0.6);
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    margin-right: 12px;
-    padding-left: 16px;
-    padding-right: 16px;
-    outline: transparent;
-
-    transition-property: border-color;
-    transition-duration: 250ms;
-    transition-timing-function: var (--timing-function)
-}
-
-.subscribe-input:hover,
-.subscribe-input:focus{
-    border-color: var(--hover-focus-color)
-}
-
-.subscribe-input::placeholder{
-    font-family: 'Roboto' sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    align-items: center;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.subscribe-button{
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30/16);
-    color: var(--hero-text-color);
-    background-color: var(--button-color);
-    letter-spacing: 0.06em;
-    flex-wrap: nowrap;
-    padding-left: 12px;
-    min-width: 200px;
-    min-height: 50px;
-    cursor: pointer;
-    border-radius: 4px;
-    border-color: transparent;
-
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition-property:background-color;
-    transition-duration: 250ms;
-    transition-timing-function: var(--timing-function), background-color 250ms var(--timing-function);
-}
-
-.subscribe-button:hover,
-.subscribe-button:focus{
-    color: var(--hero-text-color);
-    background-color: var(--button-acvive-color);
-}
-
-.subscribe-button-icon{
-    position: relative;
-    transform: translateY(+30%);
-    fill:var(--hero-text-color)
-}
 /*--------------WebStudio------------ */
 
 /*hero*/
@@ -503,9 +317,7 @@ body{
     transition-timing-function: var(--timing-function), background-color 250ms var(--timing-function);
 }
 
-.modal-close-icon{
-    width: 18px;
-}
+
 
 .button:hover,
 .button:focus {
@@ -781,7 +593,6 @@ body{
     transform: translate(-50%, -50%) scale(0);
 }
 
-
 .modal-close{
     display: flex;
     align-items: center;
@@ -792,19 +603,25 @@ body{
     position: absolute;
     width: 30px;
     height: 30px;
-    right: 8px;
-    top: 8px;
+    right: 10px;
+    top: 10px;
     cursor: pointer;
 
-    transition-property: fill;
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-function);
 }
 
 .modal-close:hover,
 .modal-close:focus{
-    fill:var(--hover-focus-color);
+    color:var(--logo-blue-color);
 }
+
+.modal-close-icon{
+    fill: currentColor;
+    width: 18px;
+}
+
 
 .backdrop.is-hidden{
     opacity: 0;
@@ -832,8 +649,7 @@ body{
     margin-bottom: 10px;
 }
 
-.input-wrap last{
-    position: relative;
+.before-comments{
     margin-bottom: 20px;
 }
 
@@ -851,7 +667,8 @@ body{
 }
 
 .modal-input {
-    color: var(--input-text-lable-color);
+    color: #212121;
+
     width: 100%;
     height: 40px;
     border: 1px solid var(--input-border);
@@ -896,7 +713,7 @@ body{
     font-family: 'Roboto' sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 17px;
     line-height: calc(14/12);
     letter-spacing: 0.01em;
 
@@ -911,7 +728,6 @@ body{
     line-height: 1.17px;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
-
 }
 
 .modal-icon{
@@ -942,6 +758,13 @@ body{
     justify-content: center;
     align-items: center;
 
+}
+
+.check-box-wrap{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .invisible{
@@ -1010,7 +833,7 @@ fill:#ffffff
 .modal-button{
     font-family: inherit;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 16px;
     font-style: bold;
     line-height: calc(30/16);
@@ -1051,21 +874,6 @@ fill:#ffffff
     margin-left: 7px;
     text-decoration: underline;
 }
-
-.modal-close-icon{
-    fill:rgba(0, 0, 0, 1);
-
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: var(--timing-function);
-}
-
-.modal-close-icon:hover, 
-.modal-close-icon:focus {
-    fill: var(--logo-blue-color);
-    border-color: var(--logo-blue-color);
-}
-
 
 /*--------------PORTFOLIO------------ */
 
@@ -1195,4 +1003,193 @@ padding-bottom: 94px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+/*--------------footer--------------*/
+
+.footer{
+    background-color:var(--accent-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: ;
+    margin-left:auto ;
+    margin-right: auto;
+}
+
+/*--------------CONTACTS--------------*/
+
+.logo-accent-white{
+    color:var(--hero-text-color);
+}
+
+.link-address-address{
+    color: var(--hero-text-color);
+    font-size: 14px;
+    line-height:calc(24/14);
+    letter-spacing: 0.03em;
+    display: inline-block;
+}
+
+.link-address{
+    color: var(--hero-text-color);
+    font-size: 14px;
+    line-height:calc(24/14);
+    letter-spacing: 0.03em;
+    color:var(--hero-text-color-low-wisibility);
+}
+
+.footer-address{
+    margin-top: 20px;
+}
+
+.address-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.call{
+    display: inline-block;
+}
+
+.footer-contact{
+    margin-right: 70px;
+}
+
+/*--------------приєднуйтесь------------ */
+
+
+.footer-soc-titel,
+.footer-soc-titel{
+    color: var(--hero-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-soc-list {
+    display: flex;
+    gap: 10px;
+
+}
+
+.footer-soc-item {
+    width: 44px;
+    height: 44px;
+}
+
+.footer-soc-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color:rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-soc-link{
+    fill: var(--hero-text-color);
+    transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
+}
+
+.footer-soc-link:hover, 
+.footer-soc-link:focus{
+    background-color: var(--logo-blue-color);
+}
+
+/*--------------Підпишіться на розсилку------------ */
+.subscribe-wrap{
+    margin-left: 93px;
+}
+
+.footer-input{
+    display: flex;
+    align-items: center;
+}
+
+.subscribe-form{
+    position: relative;
+    display: flex;
+}
+
+.subscribe-input{
+    width:358px;
+    height: 50px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    margin-right: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    outline: transparent;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20/16);
+    letter-spacing: 0.03em;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: var (--timing-function)
+}
+
+.subscribe-input:hover,
+.subscribe-input:focus{
+    border-color: var(--hover-focus-color)
+}
+
+.subscribe-input::placeholder{
+    font-family: 'Roboto' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    color: var(--hero-text-color);
+    background-color: var(--button-color);
+    letter-spacing: 0.06em;
+    flex-wrap: nowrap;
+    padding-left: 12px;
+    min-width: 200px;
+    min-height: 50px;
+    cursor: pointer;
+    border-radius: 4px;
+    border-color: transparent;
+    gap: 10px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition-property:background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function), background-color 250ms var(--timing-function);
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus{
+    color: var(--hero-text-color);
+    background-color: var(--button-acvive-color);
+}
+
+.subscribe-button-icon{
+    fill:var(--hero-text-color);
+}
 
