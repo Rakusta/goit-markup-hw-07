@@ -1,0 +1,19 @@
+.logo-link{
+    color:var(--logo-blue-color); 
+    font-family: 'Raleway','sans-serif';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    letter-spacing: 0.03em;
+    margin-right: 93px;
+}
+
+.logo-accent-black{
+    color: var(--primary-text-color);
+    font-family: inherit;
+
+}
+
+.logo-accent-white{
+    color:var(--hero-text-color);
+}

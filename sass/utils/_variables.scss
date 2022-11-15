@@ -1,0 +1,39 @@
+:root{
+
+    /* Text */
+    --primary-text-color: #212121;
+    --hero-text-color: #FFFFFF;
+    --accet-text-color: #757575;
+    --hero-text-color-low-wisibility:rgba(255, 255, 255, 0.6);
+    --logo-blue-color:#2196F3;
+    --primary-background-color:#FFFFFF;
+    --additional-background-color:#F5F4FA;
+    --accent-background-color:#2F303A;
+/* BTN */
+    --button-color:#2196F3;
+    --button-acvive-color:#188CE8;
+    --filter-btn-border-color: #ECECEC;
+    --hero-background-color: #C4C4C4;
+
+/* Filters */
+    --filter-colour:#F5F4FA;
+    --filter-active-color:#2196F3;
+    --filter-container-background-color: #FFFFFF;
+    --filter-container-border-color: 1px solid #EEEEEE;;
+    --filter-set-gap: 30px;
+    --filter-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    --filter-hover-overlay:rgba(33, 150, 243, 0.9);
+
+    --team-border-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    --team-soc-item-color: #AFB1B8;
+    --header-container-border: #ECECEC;
+    --clients-border: #AFB1B8;
+
+    --input-border: rgba(33, 33, 33, 0.2);
+    --input-text-lable-color: rgba(117, 117, 117, 1);
+
+/* Cubic */
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+

@@ -1,3 +1,21 @@
-body{
-    background-color: rgb(106, 111, 110);
-}
+// utility styles
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+// base styles
+@import './base/base';
+@import './base/container';
+@import "./base/reset";
+
+// components styles
+@import './components/btn';
+@import './components/logo';
+
+
+// layout styles
+@import './layout/header';
+@import './layout/hero';
+@import './layout/benefis';
+
+
+
