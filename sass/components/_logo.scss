@@ -1,4 +1,6 @@
-.logo-link{
+.logo{
+
+&-link{
     color:var(--logo-blue-color); 
     font-family: 'Raleway','sans-serif';
     font-weight: 700;
@@ -8,12 +10,13 @@
     margin-right: 93px;
 }
 
-.logo-accent-black{
+&-accent-black{
     color: var(--primary-text-color);
     font-family: inherit;
 
 }
 
-.logo-accent-white{
+&-accent-white{
     color:var(--hero-text-color);
+}
 }
