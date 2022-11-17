@@ -1,6 +1,7 @@
 /*--------------CLIENTS------------ */
+.clients{
 
-.clients-title{
+&-title{
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42/36);
@@ -9,18 +10,18 @@
     margin-bottom: 50px;
 }
 
-.clients-list {
+&-list {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-.clients-item {
+&-item {
     width: calc((100% - 5 * 30px) / 6);
     height: 92px;
 }
 
-.clients-link {
+&-link {
     width: 100%;
     height: 100%;
     border: 1px solid;
@@ -34,19 +35,20 @@
     transition: border-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+&-link:hover,
+&-link:focus {
     border: 1px solid;
 
 }
 
-.clints-soc-icon{
+&-soc-icon{
     transition: fill 250ms var(--timing-function);
 
 }
 
-.clients-link:hover, 
-.clients-link:focus .clints-soc-icon{
+&-link:hover, 
+&-link:focus .clints-soc-icon{
     fill: var(--logo-blue-color);
     border-color: var(--logo-blue-color);
+}
 }
