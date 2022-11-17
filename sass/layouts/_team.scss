@@ -1,5 +1,5 @@
-
 /*our-team*/
+
 .our-team-section{
     background-color: var(--additional-background-color);
     padding-top: 94px;
@@ -7,10 +7,10 @@
 }
 
 .our-team{
+    /* width: 270px; */
     display: flex;
-    flex-basis: calc(100% / 3);
+    flex-basis: calc((100% - 30px * var(--number-of-gaps-three)) / var(--number-of-items-four));    
     gap: 30px;
-
 }
 .our-team-title{
     font-weight: 700;

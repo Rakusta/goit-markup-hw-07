@@ -9,7 +9,8 @@
     --primary-background-color:#FFFFFF;
     --additional-background-color:#F5F4FA;
     --accent-background-color:#2F303A;
-/* BTN */
+
+    /* BTN */
     --button-color:#2196F3;
     --button-acvive-color:#188CE8;
     --filter-btn-border-color: #ECECEC;
@@ -32,8 +33,13 @@
     --input-border: rgba(33, 33, 33, 0.2);
     --input-text-lable-color: rgba(117, 117, 117, 1);
 
-/* Cubic */
+/* Animation */
     --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
+/* Other */
+    --number-of-gaps-two: 2;
+    --number-of-gaps-three: 3;
+    --number-of-items-three: 3;
+    --number-of-items-four: 4;
