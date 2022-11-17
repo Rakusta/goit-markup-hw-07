@@ -1,8 +1,8 @@
 /*--------------WebStudio------------ */
 /*--------------CLIENTS------------ */
-.clients{
 
-&-title{
+
+.clients-title{
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42/36);
@@ -11,18 +11,18 @@
     margin-bottom: 50px;
 }
 
-&-list {
+.clients-list {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-&-item {
+.clients-item {
     width: calc((100% - 5 * 30px) / 6);
     height: 92px;
 }
 
-&-link {
+.clients-link {
     width: 100%;
     height: 100%;
     border: 1px solid;
@@ -34,28 +34,21 @@
     fill:var(--team-soc-item-color);
 
     transition: border-color 250ms var(--timing-function), fill 250ms var(--timing-function);
-}
 
 &-link:hover,
 &-link:focus {
     border: 1px solid;
-
+}
 }
 
-&-soc-icon{
+.clients-soc-icon{
     transition: fill 250ms var(--timing-function);
 
 }
 
-&-link:hover, 
-&-link:focus .clints-soc-icon{
+.clients-link:hover .clints-soc-icon, 
+.clients-link:focus .clints-soc-icon{
     fill: var(--logo-blue-color);
     border-color: var(--logo-blue-color);
 }
-}
 
-/*
-.team-soc-link:hover, 
-.team-soc-link:focus .clints-soc-icon{
-    fill: var(--hero-text-color)
-}

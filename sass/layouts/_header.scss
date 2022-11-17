@@ -5,13 +5,14 @@
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: var(--header-container-border);
+}
 
-&-container {
+.header-container {
     display: flex;
     align-items: center;
     text-align: center;
 }
-}
+
 
 /* Site navigaion */
 .site-nav-list{
@@ -71,7 +72,7 @@
     margin-left: auto;
 }
 
-&.auth-link {
+.auth-link {
     color: var(--accet-text-color);
     text-decoration: none;
     display: flex;
@@ -93,9 +94,9 @@
     transition: fill 250ms var(--timing-function);
 
 
-&:hover,
+&:hover .header-icon,
 &:focus .header-icon{
-    fill: var(--logo-blue-color)
+    fill: var(--logo-blue-color);
 }
 }
 
@@ -112,7 +113,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16/14);
-    letter-spacing: 0.02em
+    letter-spacing: 0.02em;
     
 }
 

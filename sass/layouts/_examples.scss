@@ -5,9 +5,9 @@
 .examples{
     padding-top: 94px;
     padding-bottom: 94px;
+}
 
-
-&-title{
+.examples-title{
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -17,16 +17,16 @@
     margin-bottom: 50px;
 }
 
-&-image{
+.examples-image{
     flex-basis: calc((100%-2*30px) / 3);
 }
 
-&-ul{
+.examples-ul{
     display: flex;
     gap: 30px;
 }
 
-&-head{
+.examples-head{
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16/14);
@@ -41,14 +41,13 @@
     background-color: rgba(47, 48, 58, 0.8);
 }
 
-&-head-wrap{
+.examples-head-wrap{
     position: absolute;
     bottom: 0;
     width: 100%;
 }
 
-&-products{
+.examples-products{
     position: relative;
     display: block;
-}
 }

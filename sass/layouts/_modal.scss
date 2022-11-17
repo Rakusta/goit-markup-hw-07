@@ -47,11 +47,11 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-function);
-}
 
-.modal-close:hover,
-.modal-close:focus{
+&:hover,
+&:focus{
     color:var(--logo-blue-color);
+}
 }
 
 .modal-close-icon{
@@ -115,29 +115,31 @@
 
     transition-property: border-color;
     transition-duration: 250ms var(--timing-function);
-}
 
-.modal-input:focus,
-.modal-input:hover{
+&:focus,
+&:hover{
     border-color: var(--logo-blue-color);
     fill: var(--logo-blue-color);
-
 }
 
-.modal-input:focus+.modal-icon,
-.modal-input:hover+.modal-icon{
+&:focus+.modal-icon,
+&:hover+.modal-icon{
     fill: var(--logo-blue-color);
 }
 
-.modal-input::placeholder{
+&::placeholder{
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 1%;
     color: rgba(117, 117, 117, 0.5);
 }
+} 
 
-.modal-input:focus,
-.modal-input:hover,
+&:focus,
+&:hover{
+    border-color: var(--logo-blue-color)
+}
+
 .subscribe-input:hover,
 .subscribe-input:focus{
     border-color: var(--logo-blue-color);
@@ -156,8 +158,7 @@
 
     resize:none;
 
-}
-.modal-input.comment::placeholder{
+&::placeholder{
     font-family: 'Roboto' sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -165,6 +166,7 @@
     line-height: 1.17px;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+}
 }
 
 .modal-icon{

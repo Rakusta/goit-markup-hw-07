@@ -84,7 +84,7 @@ padding-bottom: 94px;
     margin: 0px;
 
 .filter-item:focus &,
-.filter-item:hover &{
+.filter-item:hover & {
     transform: translateY(0);
 }
 }

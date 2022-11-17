@@ -4,21 +4,13 @@
     background-color:var(--accent-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
-    
-&:footer-container{
-    display: flex;
-    margin-left:auto ;
-    margin-right: auto;
-}
 }
 
-/*
-.footer-container {
+.footer:footer-container{
     display: flex;
     margin-left:auto ;
     margin-right: auto;
 }
-*/
 
 /*--------------CONTACTS--------------*/
 .footer-contact{
@@ -31,12 +23,10 @@
     line-height:calc(24/14);
     letter-spacing: 0.03em;
     display: inline-block;
-
 }
 
 /*--------------приєднуйтесь------------ */
 
-.footer-soc-titel,
 .footer-soc-titel{
     color: var(--hero-text-color);
     font-weight: 700;
@@ -66,15 +56,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
 
-.footer-soc-link{
     fill: var(--hero-text-color);
     transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 
     &:hover,
     &:focus {
     background-color: var(--logo-blue-color);
+
 }
 }
 

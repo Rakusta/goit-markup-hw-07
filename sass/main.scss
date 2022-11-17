@@ -5,24 +5,23 @@
 // base styles
 @import './base/base';
 @import './base/container';
-@import "./base/reset";
+@import './base/reset';
 
 // components styles
 @import './components/btn';
 @import './components/logo';
 
-
 // layouts styles
 @import './layouts/header';
 @import './layouts/hero';
-@import './layouts/benefis';
+@import './layouts/benefits';
 @import './layouts/examples';
 @import './layouts/team';
 @import './layouts/clients';
 @import './layouts/modal';
 @import './layouts/portfolio';
 @import './layouts/footer';
-@import './layouts/subscribe';
+
 
 
 

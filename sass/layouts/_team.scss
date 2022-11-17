@@ -6,14 +6,14 @@
     display: flex;
     flex-basis: calc((100% - 30px * var(--number-of-gaps-three)) / var(--number-of-items-four));    
     gap: 30px;
-
-&-section{
+} 
+.our-team-section{
     background-color: var(--additional-background-color);
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-&-title{
+.our-team-title{
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42/36);
@@ -21,7 +21,7 @@
     letter-spacing: 0.03em;
     margin-bottom: 50px;
 }
-}
+
 
 .team-member-name{
     color: var(--primary-text-color);
