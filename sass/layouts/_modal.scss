@@ -135,9 +135,9 @@
 }
 } 
 
-&:focus,
-&:hover{
-    border-color: var(--logo-blue-color)
+.modal-input:focus,
+.modal-input:hover{
+    border-color: var(--logo-blue-color);
 }
 
 .subscribe-input:hover,
