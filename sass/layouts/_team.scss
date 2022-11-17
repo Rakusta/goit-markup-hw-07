@@ -1,24 +1,26 @@
+/*--------------WebStudio------------ */
 /*our-team*/
-
-.our-team-section{
-    background-color: var(--additional-background-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .our-team{
     /* width: 270px; */
     display: flex;
     flex-basis: calc((100% - 30px * var(--number-of-gaps-three)) / var(--number-of-items-four));    
     gap: 30px;
+
+&-section{
+    background-color: var(--additional-background-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
-.our-team-title{
+
+&-title{
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42/36);
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
+}
 }
 
 .team-member-name{
@@ -76,14 +78,15 @@
 
     fill:var(--team-soc-item-color);
     transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
-}
 
-.team-soc-link:hover, 
-.team-soc-link:focus{
+
+&:hover, 
+&:focus{
     background-color: var(--logo-blue-color);
 }
 
-.team-soc-link:hover, 
-.team-soc-link:focus .clints-soc-icon{
+&:hover, 
+&:focus {
     fill: var(--hero-text-color)
+}
 }

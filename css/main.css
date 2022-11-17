@@ -286,6 +286,12 @@ a {
   transition: fill 250ms var(--timing-function);
 }
 
+.header-icon:hover,
+.header-icon:focus .header-icon {
+  fill: var(--logo-blue-color);
+}
+
+
 .auth-link {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -301,10 +307,6 @@ a {
   letter-spacing: 0.02em;
 }
 
-.header-icon:hover,
-.header-icon:focus .header-icon {
-  fill: var(--logo-blue-color);
-}
 
 /*--------------WebStudio------------ */
 /*hero*/
