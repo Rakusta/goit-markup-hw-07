@@ -206,106 +206,143 @@ a {
 }
 
 /* -------------header------------ */
-.header {
-  font-family: "Roboto";
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: var(--header-container-border);
+.header{
+    font-family:'Roboto';
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--header-container-border);
+
 }
 
-.header__container {
+.header-container {
     display: flex;
     align-items: center;
     text-align: center;
 }
 
+.logo-link{
+    color:var(--logo-blue-color); 
+    font-family: 'Raleway','sans-serif';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    letter-spacing: 0.03em;
+    margin-right: 93px;
+}
+
+.logo-accent-black{
+    color: var(--primary-text-color);
+    font-family: inherit;
+
+}
+
 /* Site navigaion */
-.navigation__list{
-  display: flex;
-  gap: 50px;
-  align-items: center;
+
+.header-navigation {
+    margin-left: ;
 }
 
-.navigation__list,.link-address,.link:hover,
-.navigation__list,.link-address,.link:focus{
-  color: var(--logo-blue-color);
-}
-.navigation__link .link.navigation__current{
-  color: var(--logo-blue-color);
+.site-nav-list{
+    display: flex;
+    gap: 50px;
+    align-items: center;
 }
 
-.navigation__link{
-  color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1428571429;
-  letter-spacing: 0.02em;
-  display: inline-block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  position: relative;
-}
-.navigation-link-link:hover::after {
-  opacity: 1;
+
+.site-nav-list,.link-address,.link:hover,
+.site-nav-list,.link-address,.link:focus{
+    color:var(--logo-blue-color); 
 }
 
-.current::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--logo-blue-color);
-  bottom: -1px;
+.navigation-link{
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    position: relative;
 }
 
-.header-autharisation {
-  margin-left: auto;
+.current::after{
+    content:'';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--logo-blue-color);
+    bottom: -1px;
+} 
+
+.navigation-link:hover::after{
+    opacity: 1;
+}
+
+
+.header-autharisation{
+    margin-left: auto;
+}
+
+
+.site-nav-list .link.current{
+    color: var(--logo-blue-color);
+    
 }
 
 /* Site autharisation */
-.auth-nav-list {
-  display: flex;
-  gap: 50px;
-  margin-left: auto;
+
+.auth-nav-list{
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
 }
 
-.auth-link {
-  color: var(--accet-text-color);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  transition: color 250ms var(--timing-function);
-}
-.auth-link:hover, .auth-link:focus {
-  color: var(--logo-blue-color);
+.auth-nav-list .auth-link {
+    color: var(--accet-text-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    transition: color 250ms var(--timing-function);
 }
 
-.header-icon {
-  margin-right: 10px;
-  fill: currentColor;
-  transition: fill 250ms var(--timing-function);
-}
-.header-icon:hover .header-icon, .header-icon:focus .header-icon {
-  fill: var(--logo-blue-color);
+.auth-nav-list,.auth-link:hover,
+.auth-nav-list,.auth-link:focus{
+    color:var(--logo-blue-color); 
 }
 
-.auth-link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition: color 250ms var(--timing-function);
+.header-icon{
+    margin-right: 10px;
+    fill: currentColor;
+
+    transition: fill 250ms var(--timing-function);
+}
+.auth-link{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms var(--timing-function);
+    
 }
 
-.auth-nav-list, .auth-link:hover .auth-nav-list,
-.auth-link:focus {
-  color: var(--logo-blue-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1428571429;
-  letter-spacing: 0.02em;
+.auth-nav-list, .auth-link:hover
+.auth-nav-list, .auth-link:focus{
+    color:var(--logo-blue-color);        
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em
+    
 }
 
+
+.header-icon:hover,
+.header-icon:focus .header-icon{
+    fill: var(--logo-blue-color)
+}
 /*--------------WebStudio------------ */
 /*hero*/
 .hero {

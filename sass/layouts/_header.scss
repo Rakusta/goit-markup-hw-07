@@ -1,5 +1,4 @@
 /* -------------header------------ */
-
 .header{
     font-family:'Roboto';
     border-bottom-width: 1px;
@@ -8,7 +7,7 @@
 
 }
 
-.header__container {
+.header-container {
     display: flex;
     align-items: center;
     text-align: center;
@@ -32,20 +31,23 @@
 
 /* Site navigaion */
 
+.header-navigation {
+    margin-left: ;
+}
 
-.navigation__list{
+.site-nav-list{
     display: flex;
     gap: 50px;
     align-items: center;
 }
 
 
-.navigation__list,.link-address,.link:hover,
-.navigation__list,.link-address,.link:focus{
+.site-nav-list,.link-address,.link:hover,
+.site-nav-list,.link-address,.link:focus{
     color:var(--logo-blue-color); 
 }
 
-.navigation__link{
+.navigation-link{
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -58,7 +60,7 @@
     position: relative;
 }
 
-.navigation__current::after{
+.current::after{
     content:'';
     position: absolute;
     display: block;
@@ -69,7 +71,7 @@
     bottom: -1px;
 } 
 
-.navigation__link:hover::after{
+.navigation-link:hover::after{
     opacity: 1;
 }
 
@@ -79,7 +81,7 @@
 }
 
 
-.navigation__link .link.navigation__current{
+.site-nav-list .link.current{
     color: var(--logo-blue-color);
     
 }
