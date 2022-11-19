@@ -5,34 +5,47 @@
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: var(--header-container-border);
+
 }
 
-.header-container {
+.header__container {
     display: flex;
     align-items: center;
     text-align: center;
 }
 
+.logo-link{
+    color:var(--logo-blue-color); 
+    font-family: 'Raleway','sans-serif';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    letter-spacing: 0.03em;
+    margin-right: 93px;
+}
+
+.logo-accent-black{
+    color: var(--primary-text-color);
+    font-family: inherit;
+
+}
 
 /* Site navigaion */
-.site-nav-list{
+
+
+.navigation__list{
     display: flex;
     gap: 50px;
     align-items: center;
+}
 
 
-&,.link-address,.link:hover,
-&,.link-address,.link:focus{
+.navigation__list,.link-address,.link:hover,
+.navigation__list,.link-address,.link:focus{
     color:var(--logo-blue-color); 
 }
 
-&.link.current{
-    color: var(--logo-blue-color);
-}
-
-}
-
-.navigation-link{
+.navigation__link{
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -43,13 +56,9 @@
     padding-bottom: 32px;
 
     position: relative;
-
-&-link:hover::after{
-    opacity: 1;
-}
 }
 
-.current::after{
+.navigation__current::after{
     content:'';
     position: absolute;
     display: block;
@@ -60,8 +69,19 @@
     bottom: -1px;
 } 
 
+.navigation__link:hover::after{
+    opacity: 1;
+}
+
+
 .header-autharisation{
     margin-left: auto;
+}
+
+
+.navigation__link .link.navigation__current{
+    color: var(--logo-blue-color);
+    
 }
 
 /* Site autharisation */
@@ -72,19 +92,18 @@
     margin-left: auto;
 }
 
-.auth-link {
+.auth-nav-list .auth-link {
     color: var(--accet-text-color);
     text-decoration: none;
     display: flex;
     align-items: center;
 
     transition: color 250ms var(--timing-function);
-
-
-&:hover,
-&:focus{
-    color:var(--logo-blue-color); 
 }
+
+.auth-nav-list,.auth-link:hover,
+.auth-nav-list,.auth-link:focus{
+    color:var(--logo-blue-color); 
 }
 
 .header-icon{
@@ -92,14 +111,7 @@
     fill: currentColor;
 
     transition: fill 250ms var(--timing-function);
-
-
-&:hover .header-icon,
-&:focus .header-icon{
-    fill: var(--logo-blue-color);
 }
-}
-
 .auth-link{
     padding-top: 32px;
     padding-bottom: 32px;
@@ -113,7 +125,12 @@
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16/14);
-    letter-spacing: 0.02em;
+    letter-spacing: 0.02em
     
 }
 
+
+.header-icon:hover,
+.header-icon:focus .header-icon{
+    fill: var(--logo-blue-color)
+}

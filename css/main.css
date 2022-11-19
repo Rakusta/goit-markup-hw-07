@@ -213,26 +213,28 @@ a {
   border-bottom-color: var(--header-container-border);
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
-  text-align: center;
+.header__container {
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 /* Site navigaion */
-.site-nav-list {
+.navigation__list{
   display: flex;
   gap: 50px;
   align-items: center;
 }
-.site-nav-list, .site-nav-list .link-address, .site-nav-list .link:hover, .site-nav-list, .site-nav-list .link-address, .site-nav-list .link:focus {
+
+.navigation__list,.link-address,.link:hover,
+.navigation__list,.link-address,.link:focus{
   color: var(--logo-blue-color);
 }
-.site-nav-list.link.current {
+.navigation__link .link.navigation__current{
   color: var(--logo-blue-color);
 }
 
-.navigation-link {
+.navigation__link{
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
