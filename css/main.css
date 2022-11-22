@@ -238,10 +238,6 @@ a {
 
 /* Site navigaion */
 
-.header-navigation {
-    margin-left: ;
-}
-
 .site-nav-list{
     display: flex;
     gap: 50px;
@@ -358,7 +354,7 @@ a {
   margin: 0 auto;
 }
 
-.hero-title {
+.hero__title{
   color: var(--hero-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -370,6 +366,7 @@ a {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 30px;
+  color: green;
 }
 
 /*--------------WebStudio------------ */
@@ -378,12 +375,12 @@ a {
   padding-top: 94px;
 }
 
-.benefits-list {
+.benefits__list {
   display: flex;
   gap: 30px;
 }
 
-.benefits-wrap {
+.benefits__wrap {
   position: relative;
   flex-basis: calc((100% - 30px * var(--number-of-gaps-two)) / var(--number-of-items-three));
 }
